@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+    <!-- header -->
     <header class="header">
         <div class="content header-content">
             <img src="./img/main-logo.png" alt="" class="main-logo">
@@ -42,7 +42,9 @@
                             <img src="./img/header-face.png" alt="" class="header-face">
                             <span>Tài khoản</span>
                         </div>
-                        <img src="./img/header-shopping.png" alt="" class="shopping">
+                        <a href="#!" class="cart">
+                            <img src="./img/header-shopping.png" alt="" class="shopping">
+                        </a>
                     </div>
 
                 </div>
@@ -64,19 +66,35 @@
             </nav>
         </div>
     </header>
-    <div class="content">
-        <main>
-            <figure class="main__intro"></figure>
-            <div class="main__product">
-                <section class="giatothomnay"></section>
-                <section class="sanphambanchay"></section>
-            </div>
-            <span class="chat"></span>
-            <button class="xemthem"></button>
-        </main>
+
+    <!-- body -->
+    <main class="body" style="background: #3c3838; height: 1000px;">
+
+        <!-- product(phần sản phẩm) -->
+        <div class="content">
+                <!-- phần ảnh giới thiệu sản phẩm -->
+                <figure class="main__intro"></figure>
+
+                <!-- phần sản phẩm chính -->
+                <div class="main__product">
+                    <!-- phần giá tốt hôm nay -->
+                    <section class="giatothomnay"></section>
+
+                    <!-- phần sản phẩm bán chạy -->
+                    <section class="sanphambanchay"></section>
+                </div>
+                <!-- <button class="xemthem"></button> -->
+        </div>
+
+        <!-- side-bar(phần thanh danh mục) -->
         <aside></aside>
-    </div>
-    <footer></footer>
+
+        <!-- footer(phần cuối trang) -->
+        <footer></footer>
+
+        <!-- chat cố định -->
+        <span class="chat"></span>
+    </main>
 
 </body>
 

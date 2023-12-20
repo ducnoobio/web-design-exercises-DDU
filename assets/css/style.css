@@ -97,21 +97,32 @@ a {
 
 .home{
     display: flex;
+    align-items: center;
+    padding: 8px 16px;
 }
 
 .header-home{
     width: 24px;
     height: 24px;
+    margin-right: 10px;
+}
+
+.face{
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
 }
 
 .header-face{
     width: 24px;
     height: 24px;
+    margin-right: 10px;
 }
 
 .shopping{
     width: 24px;
     height: 24px;
+    /* padding: 16px; */
 }
 
 .header__hang2{
@@ -138,9 +149,12 @@ a {
     color: black;
     font-weight: 500;
     text-decoration: underline;
+    padding-left: 5px;
 }
 
 .header__dot{
     width: 20px;
     height: 20px;
 }
+
+/* --------------------MAIN---------------------- */
