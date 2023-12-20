@@ -19,8 +19,10 @@ a {
 
 .content {
     width: 1535px;
+
     max-width: calc(100% - 130px);
     margin: 0 auto;
+    /* background-color: red; */
 }
 
 /* header */
@@ -56,7 +58,7 @@ a {
     align-items: center;
     width: 910px;
     height: 40px;
-    border: 2px solid #919090;
+    border: 1px solid #d5d3d3;
     border-radius: 10px;
 }
 
@@ -118,39 +120,13 @@ a {
 }
 
 .cart{
-    position: relative;
-    display: flex; 
-    align-items: center;
-    margin-left: 24px;
-}
-
-.cart::before{
-    content: "";
-    display: block;
-    position: absolute;
-    left: -12px;
-    height: 20px;
-    border: 1px solid rgb(235, 235, 240);
+    display: flex;
 }
 
 .shopping{
-    position: relative;
     width: 24px;
     height: 24px;
 }
-
-.shopping__span{
-    padding: 2.5px 4px; 
-    color: white; 
-    font-size: 1.4rem; 
-    font-weight: 500; 
-    background: red; 
-    border-radius: 50%; 
-    position: absolute; 
-    top: -4px; 
-    right: -10px;
-}
-
 .header__hang2{
     display: flex;
     justify-content: space-between;
@@ -189,7 +165,32 @@ a {
     background: #f5f5fa;
 }
 
-/* side-bar */
+.content__body{
+    display: flex;
+}
+
+/* -------------side-bar--------------- */
 .side-bar{
+    width: 230px;
+    height: 1000px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* --------------product--------------- */
+
+.product{
+    width: calc(100% - 230px);
+    height: 1000px;
+    margin-left: 23px;
+    border-radius: 10px;
+    background: white;
+}
+
+/* --------------footer--------------- */
+.footer{
+    height: 500px;
+    margin-top: 40px;
     
+    background: white;
 }

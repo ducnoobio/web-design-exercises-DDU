@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 /* common */
@@ -58,7 +58,7 @@ a {
     align-items: center;
     width: 910px;
     height: 40px;
-    border: 2px solid #919090;
+    border: 1px solid #d5d3d3;
     border-radius: 10px;
 }
 
@@ -157,4 +157,69 @@ a {
 .header__dot{
     width: 20px;
     height: 20px;
+}
+
+/* --------------------MAIN---------------------- */
+.body{
+    padding-top: 20px;
+    background: #f5f5fa;
+}
+
+.content__body{
+    display: flex;
+}
+
+/* -------------side-bar--------------- */
+.side-bar{
+    max-height: 100vh;
+    position: sticky;
+    overflow-y: hidden;
+    top: 0;
+    overflow-y: scroll;
+    width: 230px;
+    height: 2000px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.side-bar::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+/* --------------main-body--------------- */
+
+.container{
+    width: calc(100% - 230px);
+    margin-left: 24px;
+    border-radius: 10px;
+    background: #f5f5fa;
+}
+
+/* ----------product---------- */
+
+.main__intro{
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+}
+
+.giatothomnay{
+    height: 300px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.sanphambanchay{
+    height: 300px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* ----------footer---------- */
+.footer{
+    height: 200px;
+    margin-top: 40px;
+    background: white;
 }
