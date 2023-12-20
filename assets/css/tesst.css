@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 /* common */
@@ -171,26 +171,55 @@ a {
 
 /* -------------side-bar--------------- */
 .side-bar{
+    max-height: 100vh;
+    position: sticky;
+    overflow-y: hidden;
+    top: 0;
+    overflow-y: scroll;
     width: 230px;
-    height: 1000px;
+    height: 2000px;
     background-color: white;
     border-radius: 10px;
 }
 
-/* --------------product--------------- */
-
-.product{
-    width: calc(100% - 230px);
-    height: 1000px;
-    margin-left: 23px;
-    border-radius: 10px;
-    background: white;
+.side-bar::-webkit-scrollbar{
+    background-color: transparent;
 }
 
-/* --------------footer--------------- */
+/* --------------main-body--------------- */
+
+.container{
+    width: calc(100% - 230px);
+    margin-left: 24px;
+    border-radius: 10px;
+    background: #f5f5fa;
+}
+
+/* ----------product---------- */
+
+.main__intro{
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+}
+
+.giatothomnay{
+    height: 300px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.sanphambanchay{
+    height: 300px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* ----------footer---------- */
 .footer{
-    height: 500px;
+    height: 200px;
     margin-top: 40px;
-    
     background: white;
 }
